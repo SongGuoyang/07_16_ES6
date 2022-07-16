@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 简单的箭头函数
+        // const fn = () => {alert('太热了')}
+        // fn()
+        // 省略：函数体里面只有一个语句，可以省略大括号
+        const fn1 = () => alert('太热了')
+        fn1()
+        // 加一个参数
+        // const fn2 = (str) => alert('太热了'+str)
+        // fn2('要死人了')
+        // 省略：参数里面只有一个语句，可以省略括号
+        const fn3 = str => alert('太热了'+str)
+        fn3('要死人了')
+        // 返回两个参数的和
+        const fn4 = (a,b) => alert(a+b)
+        fn4(1,9)
+    </script>
+</body>
+</html>
