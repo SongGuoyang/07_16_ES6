@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = 10
+        // let 可以声明变量
+        let num1 = 10
+        // 特点一：let声明的变量有块级作用域，var是没有的
+        // if (true) {
+        //     var a = 10
+        //     let b = 100
+        //     console.log(a);
+        //     console.log(b);
+        // }
+        // console.log(a);
+        // console.log(b);
+        // 特点二：在for循环中，let定义的变量在循环体外面不能使用
+        for (var index1 = 0; index1 < 5; index1++) {
+            console.log(index1);
+            
+        }
+        console.log(index1);
+        for (let index = 0; index < 5; index++) {
+            console.log(index);
+            
+        }
+        // console.log(index);
+        // 特点三：使用let定义的变量必须先定义后使用
+        console.log(s);
+        var s = 1000
+        console.log(d);
+        let d = 10000
+        // 特点四：使用let声明的变量不能重复定义
+        var a = 1000
+        // let d = 1000
+    </script>
+</body>
+</html>
